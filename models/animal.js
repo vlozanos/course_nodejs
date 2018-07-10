@@ -8,7 +8,7 @@ var AnimalSchema = Schema({
     description: String,
     image: String,
     origen: {
-        contry: String,
+        country: String,
         state: String
     }
 });
