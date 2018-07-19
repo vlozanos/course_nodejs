@@ -6,9 +6,11 @@ var app = require('./app')
 
 var app = express();
 
+
 var animalRoutes = require('./routes/animal');
 
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json({limit:'50mb'}));
 app.use(bodyParser.json());
 
 app.use('/api', animalRoutes);
